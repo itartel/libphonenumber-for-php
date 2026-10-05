@@ -1230,7 +1230,7 @@ class PhoneNumberUtil
     /**
      * Helper function to check the country calling code is valid.
      */
-    protected function hasValidCountryCallingCode(int $countryCallingCode): bool
+    protected function hasValidCountryCallingCode(?int $countryCallingCode): bool
     {
         return isset($this->countryCallingCodeToRegionCodeMap[$countryCallingCode]);
     }
